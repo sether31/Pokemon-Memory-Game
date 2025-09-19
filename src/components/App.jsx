@@ -11,8 +11,8 @@ function App() {
 
   return (
     <section className="container-xl">
-      <div className="flex items-center justify-between mt-10">
-        <h1 className="mt-4 text-4xl font-bold text-center text-amber-400">Pokemon Memory Game</h1>
+      <div className="flex flex-col justify-between gap-4 mt-10 sm:items-center sm:flex-row">
+        <h1 className="mt-4 text-3xl font-bold sm:text-4xl text-amber-400 sm:text-center">Pokemon Memory Game</h1>
         <p className="text-lg text-amber-400">
           Score:
           <br />
@@ -21,7 +21,7 @@ function App() {
       </div>
       <br />
 
-      <div className="grid grid-cols-1 gap-4 mt-6 sm:grid-cols-4">
+      <div className="grid grid-cols-1 gap-4 mt-6 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
         {
           !loading && pokemonList.map((data) => {
             return (
