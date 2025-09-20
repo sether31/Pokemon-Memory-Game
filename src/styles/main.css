@@ -1,1 +1,8 @@
 @import 'tailwindcss';
+
+
+@layer {
+  .container-xl {
+    @apply w-full px-4 pb-20 mx-auto max-w-7xl;
+  }
+}
